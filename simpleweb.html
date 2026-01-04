@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Sujit Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        a.a:hover {
+            color: blueviolet;
+            background-color: palegreen;
+            padding: 6px 12px;
+            border: 2px solid green;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background-color: deepskyblue;
+            font-weight: bold;
+            padding: 1px 3px;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            color: darkmagenta;
+        }
+
+        a.a {
+            color: rgb(29, 122, 62);
+            text-decoration: none;
+        }
+
+        h2:hover {
+            background-color: purple;
+            background-size: auto;
+            color: darkblue;
+        }
+
+        nav {
+            background-color: lightcoral;
+            background-size: cover auto;
+            padding: 6px 12px;
+            border: 2px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: large;
+        }
+
+        body {
+            background-color: antiquewhite;
+            font-family: 'pacifico', cursive;
+            display: flex;
+        }
+
+        .Sujit {
+            background-color: lightblue;
+            padding: 6px 12px;
+            border: 2px solid blue;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: black;
+            color: aliceblue;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            background-position: end;
+            margin-top: auto;
+        }
+
+        body {
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            cursor: default;
+        }
+
+        section {
+            display: block;
+            padding: 40px;
+        }
+
+        footer.font {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            width: 300px auto;
+            max-width: 1200% auto;
+            margin: auto;
+            padding: 10%;
+            background-color: lightgreen;
+            border: 2px solid darkgreen;
+            border-radius: 8px;
+            box-shadow: 0 0 20px black;
+            text-align: center;
+        }
+
+        .hover:hover {
+            background-color: powderblue;
+        }
+
+        div {
+            width: 100%;
+            max-width: 500px;
+            justify-content: center;
+            margin: auto;
+        }
+
+        h1 {
+            background-color: lightslategrey;
+            padding: 20px auto;
+            width: 500px auto;
+            background-position: center;
+            border-radius: 10px;
+            border: 2px;
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <Header>
+        <h1>The Sujit Website</h1>
+    </Header>
+    <nav>
+        <a onclick="showpage('Home')">Home</a>&nbsp;&nbsp;
+        <a onclick="showpage('Information')">Information</a>&nbsp;&nbsp;
+        <a onclick="showpage('About')">About</a>&nbsp;&nbsp;
+        <a onclick="showpage('Contact')">Contact</a>&nbsp;&nbsp;
+        <a onclick="showpage('MyOwnProject')">My Own Project</a>
+    </nav>
+    <main>
+        <section id="Home" class="active">
+            <h2 class="Sujit">Home</h2>
+            <p>Hello, I am Sujit K. Vishwakarma</p>
+            <p>My You Tube Channel is</p> <a class="a" href="https://www.youtube.com/@Dr.kvssujit" target="_blank"
+                rel="noopener noreferrer">Dr. KVS Sujit</a>
+        </section>
+        <section id="Information">
+            <h2 class="Sujit">Information</h2>
+            <p> My name is Sujit K. Vishwakarma. I am a B.Sc. IT student and I am learning web development. I have basic
+                knowledge of HTML, CSS, and JavaScript, and I enjoy creating websites with animations, sound effects,
+                and responsive designs. I like to learn step by step and prefer explanations in simple English. I am
+                also interested in freelancing, programming concepts, and improving my technical skills. My goal is to
+                become a skilled web developer and build creative and useful websites in the future. </p>
+        </section>
+        <section id="About">
+            <h2 class="Sujit">About</h2>
+            <p>My age is 17 Years</p>
+            <p> My favorite colour is Black </p>
+            <p>I am a B.Sc. IT student learning web development. I enjoy building creative websites and learning new
+                technologies step by step.</p>
+            <p>Here below is my YouTube Channel and Instagram I'D </p> <a class="a"
+                href="https://www.youtube.com/@Dr.kvssujit" target="_blank" rel="noopener noreferrer">You
+                Tube</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a class="a" href="https://www.instagram.com/sujiit__01"
+                target="_blank" rel="noopener noreferrer">Instagram</a>
+        </section>
+        <section id="Contact">
+            <h2 class="Sujit">Contact</h2>
+            <div>
+                <form action="#" onsubmit="showMessage()">
+                    <p>Name <input type="text" class="text" placeholder="Enter Your Name" required></p>
+                    <p>Email <input type="email" class="email" placeholder="Enter Your Email" required></p>
+                    <p>Contact No. <input type="number" class="number" placeholder="Enter Your Number" required></p>
+                    <input class="hover" type="submit" value="Submited">
+                </form>
+            </div>
+        </section>
+        <section id="MyOwnProject">
+            <h2 class="Sujit">My Own Project</h2>
+            <div class="Project-box">
+                <h3>Payment Form</h3>
+                <p>My First Website Using HTMl and CSS</p> <a class="a" href="payment_form.html.html"
+                    target="_blank">Payment Form</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        function showMessage() {
+            alert("Your Information Submited");
+        }
+    </script>
+    <footer class="font"> <a href="https://policies.google.com/faq?hl=en-US">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a
+            href="#">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://policies.google.com/terms?hl=en-US">Term
+            of Service</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://policies.google.com/privacy?hl=en-US">Privacy
+            Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">&copy; 2025 | Sujit</a>&nbsp;&nbsp;|&nbsp;&nbsp; </footer>
+    <script>
+        function showpage(pageId) {
+            let pages = document.querySelectorAll("section");
+            pages.forEach(page => { page.style.display = "none"; });
+            document.getElementById(pageId).style.display = "block";
+        } 
+    </script>
+</body>
+
+</html>
